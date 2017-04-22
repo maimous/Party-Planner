@@ -13,5 +13,37 @@ namespace Party_Planner
         public int NumberOfPeople { get; set; }
         public bool FancyDecorations { get; set; }
         public bool HealthyOption { get; set; }
+
+        public DinnerParty(int numberOfPeople, bool fancyDecorations, bool healthyOption)
+        {
+            NumberOfPeople = numberOfPeople;
+            FancyDecorations = fancyDecorations;
+            HealthyOption = healthyOption;
+        }
+
+        private decimal CalculateCostOfDecorations()
+        {
+            if (FancyDecorations)
+            {
+                return (NumberOfPeople * 15.0M) + 50M;
+            }
+            else
+            {
+                return (NumberOfPeople * 7.50M) + 30M;
+            }
+        }
+
+        private decimal CalculateCostOfBeveragesPerPerson()
+        {
+            if (HealthyOption)
+            {
+                return 5.0M;
+            }
+            else
+            {
+                return 20.0M;
+            }
+        }
+
     }
 }
