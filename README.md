@@ -20,3 +20,7 @@
 &nbsp;
 ## 03 Create private methods to calculate the intermediate costs
 * In the *DinnerParty* class create the *CalculateCostOfDecorations* and *CalculateCostOfBeveragesPerPerson* private methods.
+
+&nbsp;
+## 04 Add the read-only Cost property to calculate the cost
+* Add a read-only property called *Cost* that calculates the cost of the dinner party. The calculations are private and encapsulated behind the Cost property.

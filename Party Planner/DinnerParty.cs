@@ -45,5 +45,27 @@ namespace Party_Planner
             }
         }
 
+        public decimal Cost
+        {
+            get
+            {
+                if (HealthyOption)
+                {
+                    return (NumberOfPeople * (CostOfFoodPerPerson +
+                        CalculateCostOfBeveragesPerPerson())
+                        + CalculateCostOfDecorations()) * 0.95M;
+                }
+                else {
+                    {
+                        return (NumberOfPeople * (CostOfFoodPerPerson +
+                            CalculateCostOfBeveragesPerPerson())
+                            + CalculateCostOfDecorations()); 
+                    }
+                }
+                    
+            }
+        }
+
+
     }
 }
