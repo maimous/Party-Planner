@@ -49,23 +49,17 @@ namespace Party_Planner
         {
             get
             {
+                decimal totalCost = NumberOfPeople * (CostOfFoodPerPerson
+                        + CalculateCostOfBeveragesPerPerson())
+                        + CalculateCostOfDecorations();
+
                 if (HealthyOption)
-                {
-                    return (NumberOfPeople * (CostOfFoodPerPerson +
-                        CalculateCostOfBeveragesPerPerson())
-                        + CalculateCostOfDecorations()) * 0.95M;
+                {                    
+                    return totalCost * 0.95M;
                 }
-                else {
-                    {
-                        return (NumberOfPeople * (CostOfFoodPerPerson +
-                            CalculateCostOfBeveragesPerPerson())
-                            + CalculateCostOfDecorations()); 
-                    }
-                }
-                    
+                return totalCost;
             }
         }
-
-
+        
     }
 }
