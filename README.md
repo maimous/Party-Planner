@@ -10,3 +10,9 @@
 * Set name, text, icon etc.
 * Turn off the minimize box and maximize box.
 * Add the labels, numericUpDown and checkboxes controls.
+
+&nbsp;
+## 02 Create the *DinnerParty* class
+* Create the *DinnerParty* class.
+* Add the public properties. These properties are set in the constructor and updated by the form, and they're used when calculating the cost.
+* Add the constructor. It sets the three properties based on the values passed into it by the form.
