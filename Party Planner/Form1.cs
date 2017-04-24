@@ -31,21 +31,28 @@ namespace Party_Planner
         {
             decimal Cost = dinnerParty.Cost;
             costLabel.Text = Cost.ToString("c");
+        }             
+
+       
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void numericUpDown1_ValueChanged_1(object sender, EventArgs e)
         {
             dinnerParty.NumberOfPeople = (int)numericUpDown1.Value;
             DisplayDinnerPartyCost();
         }
 
-        private void fancyBox_CheckedChanged(object sender, EventArgs e)
+        private void fancyBox_CheckedChanged_1(object sender, EventArgs e)
         {
             dinnerParty.FancyDecorations = fancyBox.Checked;
             DisplayDinnerPartyCost();
         }
+        
 
-        private void healthyBox_CheckedChanged(object sender, EventArgs e)
+        private void healthyBox_CheckedChanged_1(object sender, EventArgs e)
         {
             dinnerParty.HealthyOption = healthyBox.Checked;
             DisplayDinnerPartyCost();

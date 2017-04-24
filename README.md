@@ -30,3 +30,8 @@
 * Use the constructor and the three properties(NumberOfPeople, FancyDecoration, and HealthyOption) to pass information into the object, and the Cost property to calculate the cost.
 * The *DisplayDinnerPartyCost* method updates the dinner party cost on the form by accessing the
 Cost property every time it updates the form.
+
+&nbsp;
+## 06 Add a tab control
+* Add a tab control, set a tab for the dinner party and another for a birthday party version.
+* Copy the dinner party controls to the first tab and adjust the existing code. 
