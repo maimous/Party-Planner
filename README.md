@@ -45,3 +45,8 @@ Cost property every time it updates the form.
 &nbsp;
 ## 08 Add private properties to the *BirthdayParty* class
 * Add the required private properties to the *BirthdayParty* class.
+
+&nbsp;
+## 09 Add public properties to the *BirthdayParty* class
+* Add the *CalculateCostOfDecorations* private method, same as in *DinnerParty*.
+* Add the required public properties to the *BirthdayParty* class. These are *CakeWritingTooLong* and *Cost*.

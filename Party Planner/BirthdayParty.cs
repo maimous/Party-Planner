@@ -45,5 +45,43 @@ namespace Party_Planner
             else
                 return 40;
         }
+
+        public bool CakeWritingTooLong
+        {
+            get
+            {
+                if (CakeWriting.Length > MaxWritingLength())
+                    return true;
+                else
+                    return false;
+            }
+        }
+
+        private decimal CalculateCostOfDecorations()
+        {
+            if (FancyDecorations)
+            {
+                return (NumberOfPeople * 15.0M) + 50M;
+            }
+            else
+            {
+                return (NumberOfPeople * 7.50M) + 30M;
+            }
+        }
+        
+        public decimal Cost
+        {
+            get
+            {
+                decimal totalCost = CalculateCostOfDecorations();
+                totalCost += CostOfFoodPerPerson * NumberOfPeople;
+                decimal cakeCost;
+                if (CakeSize() == 8)
+                    cakeCost = 40M + ActualLength * .25M;
+                else
+                    cakeCost = 75M + ActualLength * .25M;
+                return totalCost + cakeCost;
+            }
+        }
     }
 }
