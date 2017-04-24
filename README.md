@@ -54,3 +54,10 @@ Cost property every time it updates the form.
 &nbsp;
 ## 10 Configure the *BirthdayParty* form UI
 * Add the labels, numericUpDown, checkbox and textbox controls.
+
+&nbsp;
+## 11 Update the form to use the properties
+* Use the constructor and the properties to pass information into the object, and the Cost property to calculate the cost.
+* Use the Events page in the Properties window to add a new TextChanged event handler to the cakeWriting TextBox.
+* The *DisplayBirthdayPartyCost* method updates the dinner party cost on the form by accessing the
+Cost property every time it updates the form. Also displays the *tooLongLabel* if the *CakeWriting* message string is too long.
