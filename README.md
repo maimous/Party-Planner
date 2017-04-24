@@ -34,4 +34,10 @@ Cost property every time it updates the form.
 &nbsp;
 ## 06 Add a tab control
 * Add a tab control, set a tab for the dinner party and another for a birthday party version.
-* Copy the dinner party controls to the first tab and adjust the existing code. 
+* Copy the dinner party controls to the first tab and adjust the existing code.
+
+&nbsp;
+## 07 Add the *BirthdayParty* class
+* Create the *BirthdayParty* class.
+* Add the public properties. These properties are set in the constructor and updated by the form, and they're used when calculating the cost.
+* Add the constructor. It sets the three properties based on the values passed into it by the form.
