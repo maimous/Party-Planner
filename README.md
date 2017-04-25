@@ -65,4 +65,9 @@ Cost property every time it updates the form. Also displays the *tooLongLabel* i
 &nbsp;
 ## 12 Add the *Party* base class.
 * Create the *Party* base class which contains the common elements of the two existing classes.
-* Edit the virtual version of the Cost property to contain the common elements for both cases. Include the extra fee if there are more than 12 people in the party. 
+* Edit the virtual version of the Cost property to contain the common elements for both cases. Include the extra fee if there are more than 12 people in the party.
+
+&nbsp;
+## 13 Edit the *BirthdayParty* class to inherit from *Party*
+* The BirthdayParty constructor stays the same, even though it sets properties that are in the base class.
+* Edit the override version of the Cost property to contain the extended elements for BirthdayParty. It calls `base.Cost` from Party to include the inherited elements.
