@@ -61,3 +61,8 @@ Cost property every time it updates the form.
 * Use the Events page in the Properties window to add a new TextChanged event handler to the cakeWriting TextBox.
 * The *DisplayBirthdayPartyCost* method updates the dinner party cost on the form by accessing the
 Cost property every time it updates the form. Also displays the *tooLongLabel* if the *CakeWriting* message string is too long.
+
+&nbsp;
+## 12 Add the *Party* base class.
+* Create the *Party* base class which contains the common elements of the two existing classes.
+* Edit the virtual version of the Cost property to contain the common elements for both cases. Include the extra fee if there are more than 12 people in the party. 
