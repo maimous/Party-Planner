@@ -71,3 +71,8 @@ Cost property every time it updates the form. Also displays the *tooLongLabel* i
 ## 13 Edit the *BirthdayParty* class to inherit from *Party*
 * The BirthdayParty constructor stays the same, even though it sets properties that are in the base class.
 * Edit the override version of the Cost property to contain the extended elements for BirthdayParty. It calls `base.Cost` from Party to include the inherited elements.
+
+&nbsp;
+## 14 Edit the *DinnerParty* class to inherit from *Party*
+* The DinnerParty constructor stays the same, even though it sets properties that are in the base class.
+* Edit the override version of the Cost property to contain the extended elements for DinnerParty. It calls `base.Cost` from Party to include the inherited elements.
